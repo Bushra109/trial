@@ -1,0 +1,131 @@
+body {
+    text-align: center;
+    background-color: #F0EABE;
+    box-sizing: border-box;
+}
+
+.name {
+    padding: 10%;
+    font-size: 2rem;
+    text-align: centre;
+    margin: 27%;
+}
+
+a {
+    color: black;
+}
+
+.container {
+    display: block;
+    width: 65%;
+    margin: 0 2%;
+    padding: 0;
+}
+
+.col1 {
+    margin: 5% 20%;
+}
+
+.btn {
+    margin: 10% 42%;
+    display: inline-block;
+    display: flex;
+    height: 240px;
+    width: 95%;
+    border: 10px solid black;
+    border-radius: 20%;
+    text-align: center;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.popup-wrap {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.popup-box {
+    width: 400px;
+    /* padding: 70px; */
+    transform: translate(-50%, -50%) scale(0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    background: #fff;
+    text-align: center;
+}
+
+.popup-box h2 {
+    color: #1a1a1a;
+}
+
+.popup-box h3 {
+    color: #888;
+}
+
+.popup-box .close-btn {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    border-radius: 1000px;
+    background: #d75f70;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    line-height: 190%;
+}
+
+.popup-box .close-btn:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.image {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+}
+
+.transform-in,
+.transform-out {
+    display: block;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+
+.transform-in {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.transform-out {
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+    transform: translate(-50%, -50%) scale(0.5);
+}
